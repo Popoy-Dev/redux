@@ -1,0 +1,22 @@
+1. create app with redux
+2 in index.js i need to wrap the App with the provider using the react-rudux,
+3. inside the provider i need to add props store that contain  of setup for redux
+4. in Configure Store i imported combineReducer and createStore
+5. combineReducer is used when i have lot of reducer 
+6. in CreateStore in need to add the reducer that i need to add
+7. so the basic store configure is ready , let create a ducks folder
+8. in one blog that i read that the best practice in creating redux is use Ducks: redux reducer bundles -> this is the line https://github.com/erikras/ducks-modular-redux
+9. inside my ducks folder i create counter file inside of it i create a variable that hold the name of action that i need , then i used those action in fuction and declare it as a type
+10. lastly in ducks files that i create, i create the default exported , inside of it i have switch case, it checking if what action type that i used, then return what logic that i create inside of the case
+11. i create component Counter inside of this file i use { useSelector and useDispatch }
+12. useDispatch is trigger what function that i want to call in ducks counter or in my reducer
+13. while useSelector is use to call the return value that made by the reducer
+
+
+//
+ redux is use to solve the problem of transferring data from components to another components, imagine if you have many components that has parent and child, you need to pass every
+ props in every component, so in the redux you can use useSelector to take the value, reminders you need to create a reducer to get the value.
+
+
+ // 
+ im happy if you have a question ...
